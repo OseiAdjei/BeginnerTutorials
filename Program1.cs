@@ -104,17 +104,34 @@ namespace MethodParameters
         //}
 
         //Multiple parameters
-        static void ThisMethod(string fname, int age)
+        //static void ThisMethod(string fname, int age)
+        //{
+        //    Console.WriteLine(fname + " Adjei is " + age + " years old.");
+        //}
+        //static void Main(string[] args)
+        //{
+        //    ThisMethod("Edward", 23);
+        //    ThisMethod("George", 12);
+        //    ThisMethod("Samuel", 19);
+
+        //    Console.ReadKey();
+        //}
+
+
+        // Default Parameter Value
+        static void ThisMethod(string country = "Ghana")
         {
-            Console.WriteLine(fname + " Adjei is " + age + " years old.");
+            Console.WriteLine(country);
         }
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
-            ThisMethod("Edward", 23);
-            ThisMethod("George", 12);
-            ThisMethod("Samuel", 19);
+            ThisMethod("Angola");
+            ThisMethod();
+            ThisMethod("Burundi");
 
             Console.ReadKey();
+            // A parameter with a default value, is often known as an "optional parameter".
+            // From the example above, country is an optional parameter and "Ghana" is the default value.
         }
 
     }
