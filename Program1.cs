@@ -89,17 +89,33 @@ namespace MethodParameters
 {
     class ParametersArguments
     {
-        static void ThisMethod(string fname)
+        //single parameter
+        //static void ThisMethod(string fname)
+        //{
+        //    Console.WriteLine(fname + " Adjei");
+        //}
+        //static void Main(string[] args)
+        //{
+        //    ThisMethod("Edward");
+        //    ThisMethod("Erica");
+        //    ThisMethod("Michael");
+
+        //    Console.ReadLine();
+        //}
+
+        //Multiple parameters
+        static void ThisMethod(string fname, int age)
         {
-            Console.WriteLine(fname + " Adjei");
+            Console.WriteLine(fname + " Adjei is " + age + " years old.");
         }
         static void Main(string[] args)
         {
-            ThisMethod("Edward");
-            ThisMethod("Erica");
-            ThisMethod("Michael");
+            ThisMethod("Edward", 23);
+            ThisMethod("George", 12);
+            ThisMethod("Samuel", 19);
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
+
     }
 }
