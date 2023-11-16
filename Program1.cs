@@ -237,22 +237,49 @@ namespace Methods
 
     class MethodOverload1
     {
-        static int PlusMethod(int x, int y)
-        {
-            return x + y;
-        }
-        static double PlusMethod(double x, double y)
-        {
-            return x + y;
-        }
+        //static int PlusMethod(int x, int y)
+        //{
+        //    return x + y;
+        //}
+        //static double PlusMethod(double x, double y)
+        //{
+        //    return x + y;
+        //}
+        //static void Main(string[] args)
+        //{
+        //    int Num1 = PlusMethod(18, 2);
+        //    double Num2 = PlusMethod(18.5, 2.9);
+        //    Console.WriteLine("Int: " + Num1);
+        //    Console.WriteLine("Double: " + Num2);
+
+        //    Console.ReadKey();
+        //    //Note: Multiple methods can have the same name as long as the number and/or type of parameters are different.
+        //}
+
+        //C# Conversions
+        //static void Main(string[] args)
+        //{
+        //    try
+        //    {
+        //        string number = "true";
+        //        //can use either of these:
+        //        //byte b = byte.Parse(number);
+        //        bool b = Convert.ToBoolean(number);
+        //        Console.WriteLine(number);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        Console.WriteLine("The number could not be converted into a bool");
+        //    }
+        //}
+
+
+        //C# Operators
         static void Main(string[] args)
         {
-            int Num1 = PlusMethod(18, 2);
-            double Num2 = PlusMethod(18.5, 2.9);
-            Console.WriteLine("Int: " + Num1);
-            Console.WriteLine("Double: " + Num2);
-
-            Console.ReadKey();
+            int a = 1;
+            int b = ++a;
+            Console.WriteLine(a+b);
         }
     }
 }
