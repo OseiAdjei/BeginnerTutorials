@@ -198,3 +198,61 @@
 //            }
 
 //Console.WriteLine($"The factorial is {FactorialMethod(4)}");
+namespace Methods
+{
+    //class NamedArguments
+    //{
+    //    static void MyMethod(string child1, string child3, string child2 = "Quaye")
+    //    {
+    //        Console.WriteLine("The youngest child is " + child3);
+    //    }
+    //    static void Main(string[] args)
+    //    {
+    //        MyMethod(child1: "Amina", child3: "Kwaku");
+    //    }
+    //}
+    //class MethodOverload
+    //{
+    //    static int PlusMethodInt(int x, int y)
+    //    {
+    //        return x + y;   
+    //    }
+    //    static double PlusMethodDouble(double x, double y) 
+    //    {
+    //        return x + y;
+    //    }
+    //    static void Main(string[] args) 
+    //    {
+    //        int Num1 = PlusMethodInt(18, 2);
+    //        double Num2 = PlusMethodDouble(18.5, 2.9);
+    //        Console.WriteLine("Int: " + Num1);
+    //        Console.WriteLine("Double: " + Num2);
+
+    //        Console.ReadKey();
+    //    }
+    //}
+
+    //Instead of defining two methods that should do the same thing, it is better to overload one.
+    //In the example below, we overload the PlusMethod method to work for both int and double:
+
+    class MethodOverload1
+    {
+        static int PlusMethod(int x, int y)
+        {
+            return x + y;
+        }
+        static double PlusMethod(double x, double y)
+        {
+            return x + y;
+        }
+        static void Main(string[] args)
+        {
+            int Num1 = PlusMethod(18, 2);
+            double Num2 = PlusMethod(18.5, 2.9);
+            Console.WriteLine("Int: " + Num1);
+            Console.WriteLine("Double: " + Num2);
+
+            Console.ReadKey();
+        }
+    }
+}
